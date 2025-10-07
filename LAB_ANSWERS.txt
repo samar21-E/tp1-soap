@@ -1,0 +1,45 @@
+LAB ANSWERS -
+
+PART 1 - MONOLITHIC VERSION
+What are the limitations?
+
+- Everything is in one big script - hard to change one part without breaking others
+- Can't reuse the code for other apps
+- Hard for multiple programmers to work on it at the same time
+- If one part gets slow, the whole app gets slow
+- Testing is difficult because everything is connected
+
+PART 2 - SOAP SERVICE  
+How does SOAP enforce structure compared to monolithic?
+
+- SOAP has a strict "contract" (WSDL file) that tells exactly how to use it
+- Everything has defined types - no guessing what data to send
+- Other programs can automatically understand how to talk to it
+- Errors are handled in a standard way
+- Unlike the monolith where you just call functions directly, SOAP makes you follow rules
+
+PART 3 - REST SERVICE
+SOAP vs REST comparison:
+
+READABILITY:
+- REST is easier to read (uses simple JSON)
+- SOAP uses complex XML that's harder to understand
+
+USABILITY:
+- REST is simpler and faster to work with
+- SOAP has more built-in features but is heavier
+
+INTEGRATION:
+- REST is better for web and mobile apps
+- SOAP is better for big enterprise systems
+
+WHICH TO USE:
+- Use REST for most web projects - it's simpler
+- Use SOAP when you need strict rules and reliability
+- Don't use monolith for big projects - it gets messy
+
+WHAT I LEARNED:
+- Monoliths are simple but don't scale well
+- SOAP is strict but reliable  
+- REST is flexible and modern
+- Services are better than one big program
